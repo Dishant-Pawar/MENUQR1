@@ -1,19 +1,15 @@
 
--- Data for Name: users; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
+
+INSERT INTO "auth"."users" ("id", "email", "created_at", "updated_at") VALUES
+	('7042152a-7151-49f1-9bfd-3d8f156e7aef', 'random@gmail.com', '2023-10-22 21:37:14.24905+00', '2023-10-22 21:37:14.24905+00');
+
+-- Data for Name: identities; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
 INSERT INTO "auth"."identities" ("id", "user_id", "identity_data", "provider", "provider_id", "last_sign_in_at", "created_at", "updated_at") VALUES
 	('7042152a-7151-49f1-9bfd-3d8f156e7aef', '7042152a-7151-49f1-9bfd-3d8f156e7aef', '{"sub": "7042152a-7151-49f1-9bfd-3d8f156e7aef", "email": "random@gmail.com"}', 'email', 'email', '2023-10-22 21:37:14.249029+00', '2023-10-22 21:37:14.24905+00', '2023-10-22 21:37:14.24905+00');
--- Data for Name: identities; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
---
 
-INSERT INTO "auth"."identities" ("id", "user_id", "identity_data", "provider", "last_sign_in_at", "created_at", "updated_at") VALUES
-	('7042152a-7151-49f1-9bfd-3d8f156e7aef', '7042152a-7151-49f1-9bfd-3d8f156e7aef', '{"sub": "7042152a-7151-49f1-9bfd-3d8f156e7aef", "email": "random@gmail.com"}', 'email', '2023-10-22 21:37:14.249029+00', '2023-10-22 21:37:14.24905+00', '2023-10-22 21:37:14.24905+00');
-
-
---
--- Data for Name: menus; Type: TABLE DATA; Schema: public; Owner: postgres
---
+// ... existing code ...
 
 INSERT INTO "public"."menus" ("id", "name", "user_id", "slug", "background_image_url", "city", "address", "is_published", "updated_at", "created_at", "contact_number") VALUES
 	('dce57fbd-29dc-47a2-9a45-3a0dcc10c95a', 'Shawerma Klub Haus', '7042152a-7151-49f1-9bfd-3d8f156e7aef', 'shawerma-klub-haus-krak-w-931', 'http://localhost:34321/storage/v1/object/sign/menus-files/7042152a-7151-49f1-9bfd-3d8f156e7aef/menu/dce57fbd-29dc-47a2-9a45-3a0dcc10c95a?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtZW51cy1maWxlcy83MDQyMTUyYS03MTUxLTQ5ZjEtOWJmZC0zZDhmMTU2ZTdhZWYvbWVudS9kY2U1N2ZiZC0yOWRjLTQ3YTItOWE0NS0zYTBkY2MxMGM5NWEiLCJpYXQiOjE2OTgwMTA2NjUsImV4cCI6MjY5ODAxMDY2NH0.z6bQdmPwlA7VLZDbUAVGkf_6hKzIgd7XYFOehY6Erow', 'Kraków', 'Prusa', false, '2023-10-22 21:37:45.205+00', '2023-10-22 21:37:45.205+00', '123123123');
